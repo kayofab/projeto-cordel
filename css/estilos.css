@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+:root {
+    --font1: 'Gloock', serif;
+    --font2: 'Courgette', cursive;
+    --font3: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font1);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 8vw;
+}
+
+header > p {
+    font-family: var(--font3);
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: wheat;
+}
+
+section {
+    font-family: var(--font2);
+    font-size: 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 4vw;
+}
+
+section > p {
+    padding-bottom: 1em;
+}
+section.normal {
+    background-color: white;
+}
+
+section.imagem {
+    background-color: rgb(31, 30, 30);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.514);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.61);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.384);
+}
+
+section#img1 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+section#img2 {
+    background-image: url('../imagens/background002.jpg');
+    
+}
+footer {
+    padding: 5px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
